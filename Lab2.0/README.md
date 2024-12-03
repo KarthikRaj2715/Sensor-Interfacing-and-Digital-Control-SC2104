@@ -13,18 +13,17 @@ In this lab, you will learn how to retrieve data from the accelerometer and gyro
 
 ## Code for Displaying the Accelerometer and Gyroscope Data:
 ```c
-// Calculate angles from accelerometer data
+//Accelerometer data
 roll_acc = atan2 (imu.acc[0]/9.8, imu.acc[2]/9.8) *(180/M_PI);
 pitch_acc = atan2(imu.acc[1]/9.8, imu.acc[2]/9.8)*(180/M_PI);
 
 sprintf(sbuf, "%.2f, %.2f\r\n", pitch_acc, roll_acc);
 HAL_UART_Transmit(&huart3, (uint8_t*)sbuf, strlen(sbuf), HAL_MAX_DELAY);
 
-```c
-// Gyroscope
+//Gyroscope data
 // roll_gyro = roll_gyro - imu.gyro[1] * dt;
 // pitch_gyro = pitch_gyro - imu.gyro[0] * dt;
 // yaw_gyro = yaw_gyro - imu.gyro[2] * dt;
 
-sprintf(sbuf, "%.2f, %.2f, %.2f\r\n", pitch_gyro, roll_gyro, yaw_gyro);
-HAL_UART_Transmit(&huart3, (uint8_t*)sbuf, strlen(sbuf), HAL_MAX_DELAY);
+//sprintf(sbuf, "%.2f, %.2f, %.2f\r\n", pitch_gyro, roll_gyro, yaw_gyro);
+//HAL_UART_Transmit(&huart3, (uint8_t*)sbuf, strlen(sbuf), HAL_MAX_DELAY);
