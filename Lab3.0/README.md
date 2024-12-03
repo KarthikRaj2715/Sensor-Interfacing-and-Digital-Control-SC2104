@@ -8,8 +8,8 @@ In this lab, you will combine the readings from the accelerometer and gyroscope 
 - **Kalman Filter**: A more advanced technique that estimates the true value by considering the noise in both the accelerometer and gyroscope data. It uses a recursive algorithm to combine sensor measurements with predicted values.
 
 ## Things to note
--The code for displaying the results of both the complementary filter and Kalman filter has been commented out for clarity and to allow you to focus on one filter at a time.
--It is recommended to display one filter’s output at a time to better understand their behavior and performance.
+- The code for displaying the results of both the complementary filter and Kalman filter has been commented out for clarity and to allow you to focus on one filter at a time.
+- It is recommended to display one filter’s output at a time to better understand their behavior and performance.
 ## Code for Sensor Fusion:
 ### Complementary Filter and Kalman Filter:
 ```c
