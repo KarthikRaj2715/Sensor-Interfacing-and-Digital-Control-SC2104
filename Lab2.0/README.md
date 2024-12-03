@@ -20,7 +20,6 @@ pitch_acc = atan2(imu.acc[1]/9.8, imu.acc[2]/9.8)*(180/M_PI);
 sprintf(sbuf, "%.2f, %.2f\r\n", pitch_acc, roll_acc);
 HAL_UART_Transmit(&huart3, (uint8_t*)sbuf, strlen(sbuf), HAL_MAX_DELAY);
 
-## Code for Displaying the Gyroscope Data:
 ```c
 // Gyroscope
 // roll_gyro = roll_gyro - imu.gyro[1] * dt;
