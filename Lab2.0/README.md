@@ -11,7 +11,7 @@ In this lab, you will learn how to retrieve data from the accelerometer and gyro
 2. In Lab 1, SPI was used for communication; however, from Lab 2 onwards, we will be using I2C for communication with the sensors.
 3. To display the readings clearly, it is advisable to show the accelerometer data first, followed by the gyroscope data, or vice versa. I have already commented out the code for displaying the gyroscope readings, so by default, the accelerometer data is shown. To display the gyroscope data, simply comment out the accelerometer reading code and uncomment the code for the gyroscope.
 
-## Code for Displaying the Accelerometer Data:
+## Code for Displaying the Accelerometer and Gyroscope Data:
 ```c
 // Calculate angles from accelerometer data
 roll_acc = atan2 (imu.acc[0]/9.8, imu.acc[2]/9.8) *(180/M_PI);
