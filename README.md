@@ -28,7 +28,7 @@ Covers the implementation of digital PID control for DC motor position control. 
 - Observing motor behaviour under different parameter settings.
 
 ### **Lab 5: Self-Leveling Platform**
-Integrates concepts and techniques from Labs 1-3 to create a self-leveling platform. This project highlights the application of sensor interfacing and control mechanisms in a comprehensive system.
+Integrates concepts and techniques from Labs 2-4 to create a self-leveling platform. This project highlights the application of sensor interfacing and control mechanisms in a comprehensive system.
 
 ## Demo Preview
 ![Lab Demonstration](media/Lab5f-ezgif.com-optimize.gif)
